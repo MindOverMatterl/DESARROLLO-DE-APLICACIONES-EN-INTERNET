@@ -1,1 +1,2 @@
-# DESARROLLO-DE-APLICACIONES-EN-INTERNET
+# Laboratorios de Desarrollo de Aplicaciones en Internet
+# C24 - 3ro - A
