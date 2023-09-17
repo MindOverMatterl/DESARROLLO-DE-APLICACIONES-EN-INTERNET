@@ -1,0 +1,57 @@
+<!--Presentación-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRESENTACIÓN PERSONAL</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <section class="personal">
+        <img src="foto.jpg" alt="" width="200" class="sub_personal">
+        <h1>Albert Vargas </h1>
+        <h2>Sobre mí</h2>
+        <p>Soy estudiante de la carrera de Diseño y Desarrollo de Software de TECSUP, 
+            asi mismo curso la carrera de Ciencia de la Computación en la UNSA.</p>
+        <h2>Cosas que me apasionan</h2>
+        <p>Me gusta el desarrollo de software, y mas aun si esta relacionado con los animales
+            También soy amante de los videojuegos en especial de los géneros ARPG.
+            Amo viajar y disfruto acampar en lugares alejados de las ciudades.</p>
+        <h2>Tecnologías y lenguajes de programación</h2>
+        <ul>
+            <li>Actualmente estoy en plena formación académica.</li>
+            <li>Soy estudiante de Ciencia de la Computación en la UNSA.</li>
+            <li>También soy estudiante de Diseño y Desarrollo de Software en TECSUP.</li>
+            <li>Termine el inglés en el Cultural de Arequipa.</li>
+        </ul>
+        <h2>Idiomas</h2>
+        <ul>
+            <li>Español nativo</li>
+            <li>Ingles avanzado</li>
+        </ul>
+
+        <script>
+            function calcularPromedio() {
+                var nota1 = parseFloat(document.getElementById("nota1").value);
+                var nota2 = parseFloat(document.getElementById("nota2").value);
+                var nota3 = parseFloat(document.getElementById("nota3").value);
+                var promedio = (nota1 + nota2 + nota3) / 3;
+                    document.getElementById("resultado").innerHTML = "El promedio de notas es: " + promedio.toFixed(2);
+            }
+        </script>
+            <h2>Calculadora de promedio de notas</h2>
+        <form>
+            <label for="nota1">Nota 1:</label>
+            <input type="number" id="nota1" name="nota1"><br><br>
+            <label for="nota2">Nota 2:</label>
+            <input type="number" id="nota2" name="nota2"><br><br>
+            <label for="nota3">Nota 3:</label>
+            <input type="number" id="nota3" name="nota3"><br><br>
+            <button type="button" onclick="calcularPromedio()">Calcular promedio</button>
+        </form>
+            <div id="resultado"></div>
+    </section>
+</body>
+</html>
