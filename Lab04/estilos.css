@@ -1,0 +1,98 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    display: flex; /* Utiliza flexbox para el diseño */
+}
+
+/* Estilos de la barra de menú en el lado izquierdo */
+.header {
+    background-color: #393636;
+    color: rgb(219, 192, 56);
+    border-radius: 10px;
+    padding: 10px;
+    width: 250px; /* Ancho del menú vertical */
+    text-align: center;
+
+}
+.profile-image {
+    display: flex; /* Utiliza flexbox para centrar verticalmente la imagen */
+    flex-direction: column; /* Apila la imagen y el texto verticalmente */
+    align-items: center; /* Centra horizontalmente los elementos en el contenedor */
+    margin-top: 20px; /* Agrega un margen superior para separar la imagen del título */
+    border-color: #393636;
+}
+
+.profile-image img {
+    max-width: 150px; /* Ajusta el ancho máximo de la imagen de perfil */
+    max-height: 150px; /* Ajusta la altura máxima de la imagen de perfil */
+    border: 2px solid #b4934d;
+    border-radius: 50%; /* Redondea la imagen de perfil para hacerla circular */
+    margin-bottom: 10px; /* Espaciado entre la imagen y el texto */
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin-top: 20px;
+    padding-left: 0; /* Elimina el relleno predeterminado de la lista */
+}
+
+.nav-item {
+    margin-bottom: 10px; /* Espaciado entre elementos del menú */
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #dd985c;
+    font-weight: bold;
+    transition: color 0.3s;
+    display: block; /* Hace que cada enlace ocupe todo el ancho del menú */
+    padding: 10px 20px; /* Espaciado interno para los enlaces */
+    border-radius: 5px; /* Bordes redondeados para los enlaces */
+}
+
+.nav-item a:hover {
+    background-color: #9c6b2a;
+    color: #fff;
+}
+
+/* Estilos del contenido en el lado derecho */
+main {
+    flex: 1; /* Hace que el contenido ocupe todo el espacio restante */
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.info-section {
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 1.0);
+    border: 2px solid #c19723;
+}
+
+.info-box {
+    padding: 20px;
+}
+
+.info-box h2 {
+    color: #c6a030;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    font-size: 20px;
+}
+
+/* Estilos de la imagen de perfil */
+.profile-image {
+    max-width: 350px;
+    max-height: 350px;
+    border: 2px solid #a57d31;
+    border-radius: 20px;
+}
